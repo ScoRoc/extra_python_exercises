@@ -19,10 +19,15 @@ single([1,1,2,2,3,3,4,5,5,6,6,7,7])
 def single2(arr):
   nArr = arr
   nArr.sort()
-  for i in nArr:
+  for i in range(len(nArr)):
     print(nArr[i])
     # if i == (len(nArr) - 1):
       # print(nArr[i])
   print(nArr)
 
 single2([1,1,2,3,3,4,4,5,6,6,7,7,9,9,8,8])
+
+def find(a):
+  return [x for x in a if a.count(x) < 2][0]
+
+print(find([1,1,2,3,3,4,4,5,5,6,6,7,7,9,9,8,8]))

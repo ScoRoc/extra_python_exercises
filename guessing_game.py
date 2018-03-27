@@ -36,3 +36,20 @@
 
 
 # *** your code here ***
+
+def guessing_game():
+    answer = 42
+    guess = input("Guess a number between 1-100.")
+    guess = int(guess)
+    if guess == answer:
+        print("Correct,", answer, "is the right answer!.")
+    else:
+        while guess != answer:
+            if guess > answer:
+                guess = input("The number is lower than " + guess + ". Guess again:")
+            else:
+                guess = input("The number is higher than " + guess + ". Guess again:")
+        print("That's right,", answer, "is the correct answer!")
+
+
+guessing_game()
