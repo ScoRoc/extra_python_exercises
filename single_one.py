@@ -8,3 +8,21 @@
 
 
 # *** your code here ***
+
+def single(intArr):
+    for i in intArr:
+        if intArr[i] != intArr[i-1] and intArr[i] != intArr[i+1]:
+            print(intArr[i])
+
+single([1,1,2,2,3,3,4,5,5,6,6,7,7])
+
+def single2(arr):
+  nArr = arr
+  nArr.sort()
+  for i in nArr:
+    print(nArr[i])
+    # if i == (len(nArr) - 1):
+      # print(nArr[i])
+  print(nArr)
+
+single2([1,1,2,3,3,4,4,5,6,6,7,7,9,9,8,8])

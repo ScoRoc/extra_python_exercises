@@ -26,3 +26,23 @@
 
 
 # *** your code here ***
+
+def pyramid(h):
+    p = '#'
+    s = ' '
+    n = h
+    for i in range(h):
+        print((s * (n - 1)) + p * (h + 1 - n))
+        n -= 1
+
+pyramid(6)
+
+def pyramidFull(h):
+    p = '#'
+    s = ' '
+    n = h
+    for i in range(h):
+        print((s * (n - 1)) + p * (h + 1 - n) + ' ' + p * (h + 1 - n) + (s * (n - 1)))
+        n -= 1
+
+pyramidFull(6)

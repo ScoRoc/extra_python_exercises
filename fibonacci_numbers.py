@@ -12,3 +12,12 @@
 
 
 # *** your code here ***
+
+def find_fib(fibLen):
+    fibArr = [0, 1]
+    for i in range(fibLen - 1):
+        n = fibArr[len(fibArr) - 1] + fibArr[len(fibArr) - 2]
+        fibArr.append(n)
+    print(fibArr)
+
+find_fib(10)

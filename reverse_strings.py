@@ -9,3 +9,12 @@
 
 
 # *** your code here ***
+
+def flip(string):
+    arr = string.split(' ')
+    newArr = []
+    for i in range(len(arr)):
+      newArr.append(arr[i][len(arr[i])::-1])
+    print(' '.join(newArr))
+
+flip('here is a sentence')
